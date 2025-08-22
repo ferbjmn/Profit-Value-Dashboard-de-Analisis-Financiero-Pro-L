@@ -243,10 +243,10 @@ def main():
                 except Exception as e:
                     errs.append({"Ticker": tk, "Error": str(e)})
                 progress_bar.progress((i + 1) / len(tickers))
-                time.sleep(0.5)  # Evitar rate limiting
+                time.sleep(1)  # Evitar rate limiting
 
         status_text.text("✅ Análisis completado!")
-        time.sleep(0.5)
+        time.sleep(1)
         status_text.empty()
         progress_bar.empty()
 
