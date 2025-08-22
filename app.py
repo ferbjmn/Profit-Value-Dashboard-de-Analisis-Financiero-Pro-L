@@ -246,7 +246,7 @@ def main():
                 time.sleep(1)  # Evitar rate limiting
 
         status_text.text("✅ Análisis completado!")
-        time.sleep(1)
+        time.sleep(0.5)
         status_text.empty()
         progress_bar.empty()
 
